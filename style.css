@@ -1,0 +1,229 @@
+/* Reset geral */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+/* Rolagem suave */
+
+html{
+    scroll-behavior:smooth;
+}
+
+/* Corpo do site */
+
+body{
+    font-family:Arial, sans-serif;
+    background:#f4f4f4;
+    color:#333;
+    line-height:1.6;
+}
+
+/* Container central */
+
+.container{
+    width:90%;
+    max-width:1200px;
+    margin:auto;
+}
+
+/* Cabeçalho */
+
+header{
+    background:#111;
+    color:white;
+    padding:20px 0;
+    position:sticky;
+    top:0;
+}
+
+header .container{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+/* Logo */
+
+.logo{
+    font-size:1.8rem;
+}
+
+/* Menu */
+
+.menu{
+    display:flex;
+    list-style:none;
+    gap:20px;
+}
+
+.menu a{
+    color:white;
+    text-decoration:none;
+    transition:0.3s;
+}
+
+.menu a:hover{
+    color:#00bcd4;
+}
+
+/* Hero */
+
+.hero{
+    min-height:100vh;
+    display:flex;
+    align-items:center;
+    background:linear-gradient(135deg,#111,#333);
+    color:white;
+}
+
+.hero-content{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:40px;
+}
+
+/* Imagem */
+
+.hero img{
+    width:280px;
+    border-radius:50%;
+    border:5px solid white;
+}
+
+/* Título principal */
+
+.hero h2{
+    font-size:3rem;
+    margin-bottom:20px;
+}
+
+/* Texto */
+
+.hero p{
+    margin-bottom:20px;
+}
+
+/* Botão */
+
+.btn{
+    display:inline-block;
+    background:#00bcd4;
+    color:white;
+    padding:12px 20px;
+    border-radius:8px;
+    text-decoration:none;
+    border:none;
+}
+
+/* Seções */
+
+section{
+    padding:80px 0;
+}
+
+/* Títulos das seções */
+
+section h2{
+    text-align:center;
+    margin-bottom:40px;
+    font-size:2rem;
+}
+
+/* Cards */
+
+.cards{
+    display:flex;
+    gap:20px;
+    flex-wrap:wrap;
+}
+
+/* Card individual */
+
+.card{
+    background:white;
+    flex:1;
+    min-width:250px;
+    padding:25px;
+    border-radius:10px;
+    box-shadow:0 2px 10px rgba(0,0,0,0.1);
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-5px);
+}
+
+/* Título do card */
+
+.card h3{
+    margin-bottom:15px;
+}
+
+/* Formulário */
+
+form{
+    max-width:600px;
+    margin:auto;
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+}
+
+/* Campos */
+
+input,
+textarea{
+    padding:15px;
+    border-radius:8px;
+    border:1px solid #ccc;
+    font-size:1rem;
+}
+
+/* Área de texto */
+
+textarea{
+    min-height:150px;
+    resize:vertical;
+}
+
+/* Rodapé */
+
+footer{
+    background:#111;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+
+/* Responsividade */
+
+@media(max-width:768px){
+
+    header .container{
+        flex-direction:column;
+        gap:20px;
+    }
+
+    .menu{
+        flex-direction:column;
+        text-align:center;
+    }
+
+    .hero-content{
+        flex-direction:column;
+        text-align:center;
+    }
+
+    .hero h2{
+        font-size:2.2rem;
+    }
+
+    .hero img{
+        width:220px;
+    }
+
+}
